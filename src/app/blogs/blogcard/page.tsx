@@ -2,9 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = ({ heading, text, blogid, image }: any) => {
+export interface Card_Type{
+  heading: string;
+  text: string;
+  blogid: string;
+  image: string;
+
+}
+
+const Card = ({ heading, text, blogid, image }: Card_Type) => {
   console.log("Blog ID:", blogid); // Debug to confirm blogid value
-  
+
   return (
     <div className="bg-[#f8f5f4]/15 text-gray-700 p-6 font-sans font-semibold border border-[#f8f5f4] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
       {image && (

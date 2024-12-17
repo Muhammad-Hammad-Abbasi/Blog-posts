@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
@@ -10,9 +11,9 @@ export default function Footer() {
             <p className="text-sm mt-1">Empowering your digital transformation with cutting-edge technology.</p>
           </div>
           <div className="flex flex-col items-center font-bold font-serif justify-center sm:flex-row sm:items-center">
-            <a href="/" className="text-black hover:text-white mx-2">Home</a>
-            <a href="/blogs/about" className="text-black hover:text-white mx-2">About</a>
-            <a href="/blogs/contact" className="text-black hover:text-white mx-2">Contact</a>
+            <Link href="/" className="text-black hover:text-white mx-2">Home</Link>
+            <Link href="/blogs/about" className="text-black hover:text-white mx-2">About</Link>
+            <Link href="/blogs/contact" className="text-black hover:text-white mx-2">Contact</Link>
           </div>
         </div>
         <div className="mt-2 text-center">
