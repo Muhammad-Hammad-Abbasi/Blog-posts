@@ -9,6 +9,8 @@ import { useParams } from "next/navigation";
 
 function BlogDetails() {
   const params = useParams();
+  const [activeComment, setActiveComment] = useState<number | null>(null);
+
 
   // Check if params exist
   if (!params?.blogid) {
@@ -24,8 +26,6 @@ function BlogDetails() {
 
   // Find the specific blog based on the id
   const blog = blogPosts.find((b) => b.id === blogid);
-
-  const [activeComment, setActiveComment] = useState<number | null>(null);
 
   if (!blog) {
     return (
