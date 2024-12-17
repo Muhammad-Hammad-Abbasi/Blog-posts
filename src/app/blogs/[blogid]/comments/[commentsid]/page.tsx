@@ -1,14 +1,16 @@
-"use client"; // Client Component for Next.js
+
 
 import React from "react";
 import blogPosts from "@/app/_lib/post";
 
-export default function CommmentReplies({
-  params,
-}: {
+interface CommentRepliesProps {
   params: { blogid: string; commentsid: string };
-}) {
-  // Convert `blogid` and `commentsid` from string to numbers
+}
+
+export default async function CommmentReplies({
+  params,
+}: CommentRepliesProps) {
+  // Async conversion for the params (if required)
   const postid = parseInt(params.blogid, 10);
   const commentid = parseInt(params.commentsid, 10);
 
