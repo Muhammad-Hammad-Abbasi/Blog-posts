@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
- interface Card_Type{
+ // Define Card_Type interface for props
+interface CardProps {
   heading: string;
   text: string;
   blogid: string;
   image: string;
-
 }
 
-const Card = ({ heading, text, blogid, image }: Card_Type) => {
+// Card component definition with props destructuring
+const Card: React.FC<CardProps> = ({ heading, text, blogid, image }) => {
   console.log("Blog ID:", blogid); // Debug to confirm blogid value
 
   return (
