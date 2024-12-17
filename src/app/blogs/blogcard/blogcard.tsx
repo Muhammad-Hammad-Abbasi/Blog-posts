@@ -12,7 +12,6 @@ interface CardProps {
 
 // Card component definition with props destructuring
 const Card: React.FC<CardProps> = ({ heading, text, blogid, image }) => {
-  // console.log("Blog ID:", blogid); // Debug to confirm blogid value
 
   return (
     <div className="bg-[#f8f5f4]/15 text-gray-700 p-6 font-sans font-semibold border border-[#f8f5f4] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">

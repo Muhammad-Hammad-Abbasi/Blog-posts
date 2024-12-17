@@ -39,9 +39,9 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#f8f5f4] flex justify-center items-center flex-col">
+    <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl my-10 flex justify-center items-center flex-col">
       <h2 className="text-center text-4xl font-serif font-semibold py-5">CONTACT US</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-5 w-[300px] md:w-[350px] lg:w-[450px] h-[270px] bg-[#FAFAFA] px-3 rounded-md ">
+      <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-5 w-[300px] md:w-[350px] lg:w-[450px] h-[270px] bg-[#ff9e7bdd]/10 px-3 ">
         <input
           type="text"
           name="name"

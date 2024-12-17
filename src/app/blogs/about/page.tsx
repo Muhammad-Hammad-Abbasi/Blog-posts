@@ -6,22 +6,15 @@ function About() {
     <div className="px-4 lg:px-8 py-8">
       <h1 className="text-center text-4xl font-extrabold mb-10 font-serif">About Me</h1>
 
-      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#f8f5f4]">
-        <h2 className="text-gray-800 text-2xl sm:text-3xl lg:text-4xl mb-4 text-center">
-          A Little About My Journey
+      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#ffb4989c] border border-[#f8f5f4]">
+        <h2 className="text-gray-800 font-serif text-2xl sm:text-3xl lg:text-4xl mb-4 text-center">
+        A Glimpse into My Journey
         </h2>
         <p className="text-gray-600 mb-4 text-center">
-          I am a Full-Stack Developer with over a year of experience in creating
-          dynamic and responsive web applications. My journey in the tech world
-          has been both exciting and rewarding, with numerous projects completed
-          that showcase my skills in both frontend and backend development.
+        As a Full-Stack Developer with over a year of experience, I specialize in crafting dynamic and responsive web applications that blend seamless functionality with intuitive user experiences. My journey in technology has been an inspiring blend of growth and accomplishments, highlighted by diverse projects that reflect my expertise in both frontend and backend development.
         </p>
         <p className="text-gray-600 mb-4 text-center">
-          I have a passion for technology and enjoy sharing my knowledge through
-          blog posts. You can find my latest articles and insights on various
-          technology topics on my LinkedIn profile. Feel free to connect with me
-          to discuss potential projects, explore new technologies, or simply
-          share ideas!
+        Driven by a passion for innovation, I enjoy exploring cutting-edge technologies and sharing insights through well-crafted blog posts. You can explore my latest articles and ideas on my LinkedIn profile. Im always eager to connect with like-minded professionals to collaborate on impactful projects, discuss emerging technologies, or exchange innovative ideas. Let's create something remarkable together!
         </p>
 
         {/* Social Media Icons */}
