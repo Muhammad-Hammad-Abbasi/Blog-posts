@@ -1,24 +1,36 @@
-// "use client"; // No need to use the "use client" tag if it's a static page
-import React from "react";
+'use client'
+
+
+import React, { useEffect, useState } from "react";
 import blogPosts from "@/app/_lib/post";
 
-// Type for the component
+// Defining the interface
 interface CommentRepliesProps {
   params: { blogid: string; commentsid: string };
 }
 
-export default function CommentReplies({ params }: CommentRepliesProps) {
-  const { blogid, commentsid } = params;  // Directly accessing params
+const CommentReplies: React.FC<CommentRepliesProps> = ({ params }) => {
+  const [resolvedParams, setResolvedParams] = useState({ blogid: "", commentsid: "" });
+
+  useEffect(() => {
+    // Simulating async behavior with Promise
+    const resolveParams = async () => {
+      if (params) {
+        // Here params will be resolved, if it is a Promise.
+        setResolvedParams(await params);
+      }
+    };
+
+    resolveParams();
+  }, [params]);
 
   // Convert `blogid` and `commentsid` from string to numbers
-  const postid = parseInt(blogid, 10);
-  const commentid = parseInt(commentsid, 10);
+  const postid = parseInt(resolvedParams.blogid, 10);
+  const commentid = parseInt(resolvedParams.commentsid, 10);
 
-  // Find the blog post and the comment based on the ids
   const post = blogPosts.find((p) => p.id === postid);
   const comment = post?.comments.find((c) => c.id === commentid);
 
-  // Handle case where post or comment is not found
   if (!post || !comment) {
     return (
       <div className="justify-center size-full font-sans font-semibold flex pt-40 bg-[#ffb397dd] min-h-screen text-4xl">
@@ -27,7 +39,6 @@ export default function CommentReplies({ params }: CommentRepliesProps) {
     );
   }
 
-  // Render the comment and its replies
   return (
     <div className="bg-[#ffb397dd] min-h-screen py-10 px-6 font-sans font-semibold">
       <div className="max-w-4xl mx-auto">
@@ -47,4 +58,6 @@ export default function CommentReplies({ params }: CommentRepliesProps) {
       </div>
     </div>
   );
-}
+};
+
+export default CommentReplies;
