@@ -1,7 +1,7 @@
 // pages/blogs.js
 
 import React from "react";
-import Card from "./blogcard/page";
+import Card from "./blogcard/blogcard";
 import blogPosts from "../_lib/post";
 import Image from "next/image";
 
