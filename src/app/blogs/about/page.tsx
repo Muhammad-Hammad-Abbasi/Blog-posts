@@ -6,7 +6,7 @@ function About() {
     <div className="px-4 lg:px-8 py-8">
       <h1 className="text-center text-4xl font-extrabold mb-10 font-serif">About Me</h1>
 
-      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#ffb4989c] border border-[#f8f5f4]">
+      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#ffb4989c] border border-l-transparent border-r-transparent border-[#f8f5f4]">
         <h2 className="text-gray-800 font-serif text-2xl sm:text-3xl lg:text-4xl mb-4 text-center">
         A Glimpse into My Journey
         </h2>
