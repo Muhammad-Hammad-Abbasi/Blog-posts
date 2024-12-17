@@ -14,7 +14,7 @@ function About() {
         As a Full-Stack Developer with over a year of experience, I specialize in crafting dynamic and responsive web applications that blend seamless functionality with intuitive user experiences. My journey in technology has been an inspiring blend of growth and accomplishments, highlighted by diverse projects that reflect my expertise in both frontend and backend development.
         </p>
         <p className="text-gray-600 mb-4 text-center">
-        Driven by a passion for innovation, I enjoy exploring cutting-edge technologies and sharing insights through well-crafted blog posts. You can explore my latest articles and ideas on my LinkedIn profile. Im always eager to connect with like-minded professionals to collaborate on impactful projects, discuss emerging technologies, or exchange innovative ideas. Let's create something remarkable together!
+        Driven by a passion for innovation, I enjoy exploring cutting-edge technologies and sharing insights through well-crafted blog posts. You can explore my latest articles and ideas on my LinkedIn profile. Im always eager to connect with like-minded professionals to collaborate on impactful projects, discuss emerging technologies, or exchange innovative ideas. Let&apos;s create something remarkable together!
         </p>
 
         {/* Social Media Icons */}
