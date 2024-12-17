@@ -1,20 +1,20 @@
-
-
+// "use client"; // No need to use the "use client" tag if it's a static page
 import React from "react";
 import blogPosts from "@/app/_lib/post";
 
+// Type for the component
 interface CommentRepliesProps {
   params: { blogid: string; commentsid: string };
 }
 
-export default async function CommmentReplies({
-  params,
-}: CommentRepliesProps) {
-  // Async conversion for the params (if required)
-  const postid = parseInt(params.blogid, 10);
-  const commentid = parseInt(params.commentsid, 10);
+export default function CommentReplies({ params }: CommentRepliesProps) {
+  const { blogid, commentsid } = params;  // Directly accessing params
 
-  // Find the blog post and specific comment
+  // Convert `blogid` and `commentsid` from string to numbers
+  const postid = parseInt(blogid, 10);
+  const commentid = parseInt(commentsid, 10);
+
+  // Find the blog post and the comment based on the ids
   const post = blogPosts.find((p) => p.id === postid);
   const comment = post?.comments.find((c) => c.id === commentid);
 
@@ -27,7 +27,7 @@ export default async function CommmentReplies({
     );
   }
 
-  // Render the found comment and its replies
+  // Render the comment and its replies
   return (
     <div className="bg-[#ffb397dd] min-h-screen py-10 px-6 font-sans font-semibold">
       <div className="max-w-4xl mx-auto">
