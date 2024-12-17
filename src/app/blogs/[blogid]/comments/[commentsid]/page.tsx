@@ -1,33 +1,35 @@
 'use client'
 
-
 import React, { useEffect, useState } from "react";
 import blogPosts from "@/app/_lib/post";
 
 // Defining the interface
 interface CommentRepliesProps {
-  params: { blogid: string; commentsid: string };
+  params: Promise<{ blogid: string; commentsid: string }>;
 }
 
 const CommentReplies: React.FC<CommentRepliesProps> = ({ params }) => {
-  const [resolvedParams, setResolvedParams] = useState({ blogid: "", commentsid: "" });
+  const [resolvedParams, setResolvedParams] = useState<{ blogid: string; commentsid: string }>({ blogid: '', commentsid: '' });
 
+  // Using useEffect to resolve the Promise for params
   useEffect(() => {
-    // Simulating async behavior with Promise
     const resolveParams = async () => {
-      if (params) {
-        // Here params will be resolved, if it is a Promise.
-        setResolvedParams(await params);
+      try {
+        const paramsValue = await params; // Wait for the Promise to resolve
+        setResolvedParams(paramsValue); // Set the resolved values to state
+      } catch (error) {
+        console.error('Error resolving params:', error);
       }
     };
 
     resolveParams();
   }, [params]);
 
-  // Convert `blogid` and `commentsid` from string to numbers
+  // Convert `blogid` and `commentsid` from string to numbers after resolving the params
   const postid = parseInt(resolvedParams.blogid, 10);
   const commentid = parseInt(resolvedParams.commentsid, 10);
 
+  // Find the blog post and specific comment
   const post = blogPosts.find((p) => p.id === postid);
   const comment = post?.comments.find((c) => c.id === commentid);
 
