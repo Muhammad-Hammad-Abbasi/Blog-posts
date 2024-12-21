@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px; 
+  margin: 0 auto; 
+  width: 100%; 
+}
 
 :root {
   background-color:#ff9e7bdd;

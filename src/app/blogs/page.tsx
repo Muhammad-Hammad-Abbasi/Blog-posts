@@ -9,7 +9,7 @@ const Blogs: React.FC = () => {
   return (
     <div>
       {/* Background Image Section */}
-      <div className="relative overflow-hidden h-[50vh] flex items-center justify-center text-center ">
+      <div className="relative overflow-hidden h-[300px] flex items-center justify-center text-center ">
         <div className="absolute inset-0">
           <Image
             src="/bgImage.png"
