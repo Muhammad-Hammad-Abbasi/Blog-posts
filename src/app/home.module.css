@@ -26,10 +26,10 @@
   
   @keyframes colorChange {
     0% {
-      color: rgba(247, 250, 250, 0.75); /* Initial color */
+      color: rgba(91, 110, 110, 0.75); /* Initial color */
     }
     50% {
-      color: #b4583c; /* Midpoint color */
+      color: #7da9c1; /* Midpoint color */
     }
     70% {
       color: rgba(238, 250, 252, 0.76); /* End color */

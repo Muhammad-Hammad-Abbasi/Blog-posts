@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 text-md font-serif bg-[#d45d38] bg-opacity-70 text-white shadow-xl sticky top-0 z-50 max-w-full overflow-x-hidden">
+    <nav className="flex items-center justify-between p-4 text-md font-serif bg-[#7da9c1]/90 bg-opacity-70 text-white shadow-xl sticky top-0 z-50 max-w-full overflow-x-hidden">
       
       {/* Website Name / Logo */}
       <div className="text-[#270d0d]/100 text-xl font-extrabold hover:text-white border-b-2 border-transparent hover:border-white px-6 py-2 transition duration-300 ease-in-out  flex items-center">
