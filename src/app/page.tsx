@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./home.module.css";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
