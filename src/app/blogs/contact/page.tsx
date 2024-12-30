@@ -76,7 +76,7 @@ function Contact() {
         </button>
       </form>
 
-      {status && <p className="text-[#cf7352]">{status}</p>}
+      {status && <p className="text-[#000000] my-6">{status}</p>}
 
       {/* Social Media Icons */}
       <div className="mt-8 flex justify-center space-x-6">
