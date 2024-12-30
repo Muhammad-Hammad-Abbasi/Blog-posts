@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -52,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile Menu (Hidden on Larger Screens) */}
       <div
-        className={`fixed inset-0 bg-[#c26b50] bg-opacity-90 z-50 p-4 flex flex-col space-y-4 md:hidden h-80 items-start justify-center transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-[#7da9c1]/90 bg-opacity-90 z-50 p-4 flex flex-col space-y-4 md:hidden h-80 items-start justify-center transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

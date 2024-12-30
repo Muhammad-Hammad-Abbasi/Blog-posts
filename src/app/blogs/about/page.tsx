@@ -6,7 +6,7 @@ function About() {
     <div className="px-4 lg:px-8 py-8">
       <h1 className="text-center text-4xl font-extrabold mb-10 font-serif">About Me</h1>
 
-      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#ffb4989c] border border-l-transparent border-r-transparent border-[#f8f5f4]">
+      <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl bg-[#7da9c1]/70 border border-l-transparent border-r-transparent border-[#f8f5f4]">
         <h2 className="text-gray-800 font-serif text-2xl sm:text-3xl lg:text-4xl mb-4 text-center">
         A Glimpse into My Journey
         </h2>
@@ -24,21 +24,21 @@ function About() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+            <FaLinkedin className="text-gray-600 hover:text-[#1f272b] text-3xl transition-colors" />
           </a>
           <a
             href="https://www.facebook.com/people/Hammad-Abbasi/pfbid024P2GfZN792QzucbPJtjLKe8Tt6cNxVhE9DoBVJpnH6TGh5ipA4fr8GASjh1mmdL4l/?checkpoint_src=any"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+            <FaFacebook className="text-gray-600 hover:text-[#1f272b] text-3xl transition-colors" />
           </a>
           <a
             href="https://github.com/Muhammad-Hammad-Abbasi"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+            <FaGithub className="text-gray-600 hover:text-[#1f272b] text-3xl transition-colors" />
           </a>
         </div>
       </div>

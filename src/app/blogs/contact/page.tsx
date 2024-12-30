@@ -41,7 +41,7 @@ function Contact() {
   return (
     <div className="max-w-4xl mx-auto p-6 lg:p-8 rounded-2xl shadow-2xl border border-l-transparent border-r-transparent border-[#f8f5f4] my-10 flex justify-center items-center flex-col">
       <h2 className="text-center text-4xl font-serif font-semibold py-5">CONTACT US</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-5 w-[300px] md:w-[350px] lg:w-[450px] h-[270px] bg-[#ff9e7bdd]/10 px-3 ">
+      <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-5 w-[300px] md:w-[350px] lg:w-[450px] h-[270px] bg-[#74a0b7]/10 px-3 ">
         <input
           type="text"
           name="name"
@@ -70,7 +70,7 @@ function Contact() {
         ></textarea>
         <button
           type="submit"
-          className="border border-[#c26b50] text-[#c26b50] py-1 rounded-md transition-colors duration-1000 hover:text-white hover:border-[#c26b50] hover:bg-[#c26b50] font-serif"
+          className="border border-black text-[#000] py-1 rounded-md transition-colors duration-1000 hover:text-white hover:border-white hover:bg-[#74a0b7]/90 font-serif"
         >
           Send Message
         </button>
@@ -86,7 +86,7 @@ function Contact() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+          <FaLinkedin className="text-gray-600 hover:text-[#74a0b7] text-3xl transition-colors" />
         </Link>
         <Link
           href="https://www.facebook.com/people/Hammad-Abbasi/pfbid024P2GfZN792QzucbPJtjLKe8Tt6cNxVhE9DoBVJpnH6TGh5ipA4fr8GASjh1mmdL4l/?checkpoint_src=any"
@@ -94,7 +94,7 @@ function Contact() {
           rel="noopener noreferrer"
           aria-label="Facebook"
         >
-          <FaFacebook className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+          <FaFacebook className="text-gray-600 hover:text-[#74a0b7] text-3xl transition-colors" />
         </Link>
         <Link
           href="https://github.com/Muhammad-Hammad-Abbasi"
@@ -102,7 +102,7 @@ function Contact() {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <FaGithub className="text-gray-600 hover:text-[#c45428]/100 text-3xl transition-colors" />
+          <FaGithub className="text-gray-600 hover:text-[#417692] text-3xl transition-colors" />
         </Link>
       </div>
     </div>
